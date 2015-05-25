@@ -1,0 +1,32 @@
+<%= form_for @article, :url => {action: "update"} do |f| %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %><br>
+  </p>
+
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %><br>
+  </p>
+
+  <p>
+    <%= f.label :author %><br>
+    <%= f.text_field :author %><br>
+  </p>
+
+  <p>
+    <%= f.label :category %><br>
+    <%= f.text_field :category %><br>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %><br>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
