@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  # before_filter :authorize
+
   def index
     @articles = Article.all
   end
@@ -34,9 +36,10 @@ class ArticlesController < ApplicationController
   end
 
   private
-
   def article_params
     params.require(:article).permit(:title, :date, :author, :type, :description)
   end
 
 end
+
+
