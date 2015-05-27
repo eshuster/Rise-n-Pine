@@ -1,0 +1,104 @@
+body {
+  /*background-color: #E0E0E0;*/
+}
+
+.main-container {
+  background-color: white;
+  height: 1000px;
+  width: 100%;
+
+}
+
+.header-container {
+  margin-left: 15%;
+  text-align: center
+
+}
+
+
+.logo-container {
+  background-image: url('logo.png');
+  height: 343px;
+  width: 77%;
+  margin-top:1%;
+  margin-left: 3%;
+}
+
+.om {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.drop-down-menus {
+
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+.links {
+  margin-left: 3%;
+}
+
+.link-listing {
+  margin-left: 15%;
+}
+
+.carousel {
+  height: 300px;
+  width: 70%;
+  border: 1px solid black;
+  margin-left: 5%;
+  display: inline-block;
+  float: left;
+  /*margin-left: 2%;*/
+}
+
+.music-videos_tapes-container {
+  height: 500px;
+  width: 20%;
+  float: right;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.music-news-container {
+  float: left;
+  width: 34%;
+  height: 400px;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  border: 1px solid black;
+}
+
+
+#lifestyle-news-container_1 {
+  float: right;
+  width: 34%;
+  border: 1px solid black;
+  height: 400px;
+  margin-top: 2.5%;
+  margin-right: 3%;
+
+}
+
+#lifestyle-news-container_2 {
+  float: right;
+  width: 34%;
+  border: 1px solid black;
+  height: 400px;
+  margin-top: 2.5%;
+  margin-right: 25%;
+}
+
+
+
+/*<% @articles.each do |article|%>
+  <%=article.title %>
+ <%= link_to "Edit", edit_article_path(article.id)%>
+ <%= link_to "Delete", article_path(article.id), method: :destroy %><br>
+<%end%>
+ <%= link_to "New Article", new_article_path %><br>*/
