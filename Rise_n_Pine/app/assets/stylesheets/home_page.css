@@ -22,7 +22,6 @@ body {
   text-align: center;
 }
 
-
 .logo-container {
   background-image: url("risenpinephotos/pine.jpg");
   background-size: 100% 100%;
@@ -47,9 +46,9 @@ li {
 
 .links {
   margin-left: .5%;
-  border: 3px solid #FCC26E;
-  background-color: #d3d3d3;
-  box-shadow: 7px 7px 20px #888888;
+  border: 3px solid #00E1B1;
+  /*background-color: #d3d3d3;*/
+  box-shadow: 7px 7px 10px #FCC26E;
 }
 
 .link-listing {
@@ -59,24 +58,26 @@ li {
 .carousel {
   height: 300px;
   width: 70%;
-  border: 3px solid #FCC26E;
+  border: 3px solid #00E1B1;
   margin-left: 5%;
   display: inline-block;
   float: left;
-  background-color: white;
   opacity: .95;
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
+  /*background-image: url('Music_Pic_2.jpg');*/
 }
+
+
 
 .music-videos_tapes-container {
   height: 500px;
   width: 20%;
   float: right;
-  border: 3px solid #FCC26E;
+  border: 3px solid #00E1B1;
   display: inline-block;
   margin-right: 2%;
   opacity: .8;
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 .music-news-container_1 {
@@ -86,9 +87,9 @@ li {
   height: 600px;
   margin-top: 2.5%;
   margin-left: 5%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   opacity: .95;
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 .music-news-container_2 {
@@ -98,9 +99,9 @@ li {
   height: 600px;
   margin-top: 2.5%;
   margin-left: 5%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   opacity: .95;
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 
@@ -108,77 +109,78 @@ li {
   background-color: white;
   float: right;
   width: 34%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   height: 600px;
   margin-top: 2.5%;
   margin-right: 3%;
   opacity: .95;
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 #lifestyle-news-container_2 {
   background-color: white;
   float: right;
   width: 34%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   height: 600px;
   margin-top: 2.5%;
   margin-right: 25%;
   opacity: .95;
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 
 .category-header-music-1{
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 10px #FCC26E;
   font-weight: bold;
   font-color: gray;
   text-align: center;
-  background-color: #FCC26E;
+  border: 2px solid #00E1B1;
+
+  /*background-color: #FCC26E;*/
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid #FCC26E;
 }
 
 .category-header-music-2{
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 10px #FCC26E;
   font-weight: bold;
   font-color: gray;
   text-align: center;
-  background-color: #FCC26E;
+  /*background-color: #FCC26E;*/
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
 }
 
 .category-header-lifestyle-1{
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 10px #FCC26E;
   font-weight: bold;
   font-color: gray;
   text-align: center;
-  background-color: #FCC26E;
-  margin-top: 2%;
+/*  background-color: #FCC26E;
+*/  margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
 }
 
 .category-header-lifestyle-2{
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 10px #FCC26E;
   font-weight: bold;
   font-color: gray;
   text-align: center;
-  background-color: #FCC26E;
+  /*background-color: #FCC26E;*/
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
 }
 
 .title-header-music-1{
@@ -218,9 +220,9 @@ li {
   margin-left: 8%;
   height:300px;
   width: 85%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   background-image: url('Music_Pic_1.jpg');
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 .photo_link-container-music-2{
@@ -228,18 +230,18 @@ li {
   margin-left: 5%;
   height:300px;
   width: 90%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   background-image: url('Music_Pic_2.jpg');
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 .photo_link-container-lifestyle-1{
   margin-left: 8%;
   height:300px;
   width: 85%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   background-image: url('Lifestyle_Pic_1.jpg');
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 .photo_link-container-lifestyle-2{
@@ -247,9 +249,9 @@ li {
   margin-left: 8%;
   height: 300px;
   width: 85%;
-  border: 1px solid #FCC26E;
+  border: 2px solid #00E1B1;
   background-image: url('Lifestyle-Pic_2.jpg');
-  box-shadow: 7px 7px 20px #888888;
+  box-shadow: 7px 7px 20px #FCC26E;
 }
 
 .description-container-lifestyle-1{
@@ -281,10 +283,14 @@ li {
 }
 
 .footer-container {
-  border: 3px solid #FCC26E;
+  /*border: 3px solid #FCC26E;*/
   height: 50px;
   width: 100%;
-  box-shadow: 7px 7px 20px #888888;
+  /*box-shadow: 7px 7px 20px #888888;*/
+  background-image: url('footer_logo.jpeg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .tape-box-1{
@@ -295,7 +301,7 @@ li {
   border: 2px solid black;
   display: inline-block;
   background-image: url('Music_Pic_2.jpg');
-  box-shadow: 7px 7px 10px #888888;
+  box-shadow: 7px 7px .25px #FCC26E;
 }
 
 .tape-box-2{
@@ -306,7 +312,7 @@ li {
   border: 2px solid black;
   float: right;
   background-image: url('tape_2.jpg');
-  box-shadow: 7px 7px 10px #888888;
+  box-shadow: 7px 7px .25px #FCC26E;
 }
 
 .tape-box-3{
@@ -317,9 +323,7 @@ li {
   border: 2px solid black;
   display: inline-block;
   background-image: url('tape-3.jpg');
-  box-shadow: 7px 7px 10px #888888;
-
-
+  box-shadow: 7px 7px .25px #FCC26E;
 }
 
 .tape-box-4{
@@ -330,7 +334,7 @@ li {
   border: 2px solid black;
   float: right;
   background-image: url('tape-4.jpg');
-  box-shadow: 7px 7px 10px #888888;
+  box-shadow: 7px 7px .25px #FCC26E;
 }
 
 .tape-box-5{
@@ -341,7 +345,7 @@ li {
   border: 2px solid black;
   display: inline-block;
   background-image: url('tape-5.jpg');
-  box-shadow: 7px 7px 10px #888888;
+  box-shadow: 7px 7px .25px #FCC26E;
 }
 
 .tape-box-6{
@@ -352,5 +356,44 @@ li {
   border: 2px solid black;
   float: right;
   background-image: url('Music_Pic_1.jpg');
-  box-shadow: 7px 7px 10px #888888;
+  box-shadow: 7px 7px .25px #FCC26E;
+}
+
+.title {
+  font-size: .75em;
+  /*float: left;*/
+}
+
+#top, #bottom, #left, #right {
+  background: #00E1B1
+  ;
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 5px;
+    box-shadow: 7px 7px 15px #FCC26E;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 5px;
+    box-shadow: 7px 7px 15px #FCC26E;
+
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+    @media
+
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+
+{
+  #top, #bottom, #left, #right { display: none; }
 }
