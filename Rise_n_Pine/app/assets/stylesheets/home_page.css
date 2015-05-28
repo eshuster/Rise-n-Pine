@@ -1,23 +1,31 @@
 body {
-  /*background-color: #E0E0E0;*/
+  background-color: #FFF;
 }
 
 .main-container {
   background-color: white;
-  height: 1000px;
+  height: 1600px;
   width: 100%;
+}
 
+.body-container{
+  height: 100%;
+  width: 100%;
+  background-image: url('logo.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .header-container {
   margin-left: 15%;
-  text-align: center
-
+  text-align: center;
 }
 
 
 .logo-container {
-  background-image: url('logo.png');
+  background-image: url("risenpinephotos/pine.jpg");
+  background-size: 100% 100%;
   height: 343px;
   width: 77%;
   margin-top:1%;
@@ -30,7 +38,6 @@ body {
 }
 
 .drop-down-menus {
-
 }
 
 li {
@@ -39,7 +46,10 @@ li {
 }
 
 .links {
-  margin-left: 3%;
+  margin-left: .5%;
+  border: 3px solid #FCC26E;
+  background-color: #d3d3d3;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .link-listing {
@@ -49,165 +59,202 @@ li {
 .carousel {
   height: 300px;
   width: 70%;
-  border: 1px solid black;
+  border: 3px solid #FCC26E;
   margin-left: 5%;
   display: inline-block;
   float: left;
+  background-color: white;
+  opacity: .95;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .music-videos_tapes-container {
   height: 500px;
   width: 20%;
   float: right;
-  border: 1px solid black;
+  border: 3px solid #FCC26E;
   display: inline-block;
   margin-right: 2%;
+  opacity: .8;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .music-news-container_1 {
+  background-color: white;
   float: left;
   width: 34%;
-  height: 400px;
+  height: 600px;
   margin-top: 2.5%;
   margin-left: 5%;
-  border: 1px solid black;
+  border: 1px solid #FCC26E;
+  opacity: .95;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .music-news-container_2 {
+  background-color: white;
   float: left;
   width: 34%;
-  height: 400px;
+  height: 600px;
   margin-top: 2.5%;
   margin-left: 5%;
-  border: 1px solid black;
+  border: 1px solid #FCC26E;
+  opacity: .95;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 
 #lifestyle-news-container_1 {
+  background-color: white;
   float: right;
   width: 34%;
-  border: 1px solid black;
-  height: 400px;
+  border: 1px solid #FCC26E;
+  height: 600px;
   margin-top: 2.5%;
   margin-right: 3%;
-
+  opacity: .95;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 #lifestyle-news-container_2 {
+  background-color: white;
   float: right;
   width: 34%;
-  border: 1px solid black;
-  height: 400px;
+  border: 1px solid #FCC26E;
+  height: 600px;
   margin-top: 2.5%;
   margin-right: 25%;
+  opacity: .95;
+  box-shadow: 7px 7px 20px #888888;
 }
 
 
 .category-header-music-1{
+  box-shadow: 7px 7px 20px #888888;
+  font-weight: bold;
+  font-color: gray;
+  text-align: center;
+  background-color: #FCC26E;
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid black;
+  border: 1px solid #FCC26E;
 }
+
 .category-header-music-2{
+  box-shadow: 7px 7px 20px #888888;
+  font-weight: bold;
+  font-color: gray;
+  text-align: center;
+  background-color: #FCC26E;
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid black;
+  border: 1px solid #FCC26E;
 }
 
 .category-header-lifestyle-1{
+  box-shadow: 7px 7px 20px #888888;
+  font-weight: bold;
+  font-color: gray;
+  text-align: center;
+  background-color: #FCC26E;
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid black;
+  border: 1px solid #FCC26E;
 }
 
 .category-header-lifestyle-2{
+  box-shadow: 7px 7px 20px #888888;
+  font-weight: bold;
+  font-color: gray;
+  text-align: center;
+  background-color: #FCC26E;
   margin-top: 2%;
   margin-left: 2.5%;
   height: 30px;
   width: 95%;
-  border: 1px solid black;
+  border: 1px solid #FCC26E;
 }
 
 .title-header-music-1{
+  text-align: center;
   margin-top: 2%;
   margin-left: 2.5%;
   height:50px;
   width: 95%;
-  border: 1px solid black;
-
 }
 
 .title-header-music-2{
+  text-align: center;
   margin-top: 2%;
   margin-left: 2.5%;
   height:50px;
   width: 95%;
-  border: 1px solid black;
-
 }
 
 .title-header-lifestyle-1{
+  text-align: center;
   margin-top: 2%;
   margin-left: 2.5%;
   height:50px;
   width: 95%;
-  border: 1px solid black;
-
 }
 
 .title-header-lifestyle-2{
+  text-align: center;
   margin-top: 2%;
   margin-left: 2.5%;
   height:50px;
   width: 95%;
-  border: 1px solid black;
-
 }
 
 .photo_link-container-music-1{
   margin-top: 2%;
   margin-left: 8%;
-  height:150px;
+  height:300px;
   width: 85%;
-  border: 1px solid black;
-
+  border: 1px solid #FCC26E;
+  background-image: url('Music_Pic_1.jpg');
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .photo_link-container-music-2{
   margin-top: 2%;
-  margin-left: 8%;
-  height:150px;
-  width: 85%;
-  border: 1px solid black;
+  margin-left: 5%;
+  height:300px;
+  width: 90%;
+  border: 1px solid #FCC26E;
+  background-image: url('Music_Pic_2.jpg');
+  box-shadow: 7px 7px 20px #888888;
+}
 
-}.photo_link-container-lifestyle-1{
-  margin-top: 2%;
+.photo_link-container-lifestyle-1{
   margin-left: 8%;
-  height:150px;
+  height:300px;
   width: 85%;
-  border: 1px solid black;
-
+  border: 1px solid #FCC26E;
+  background-image: url('Lifestyle_Pic_1.jpg');
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .photo_link-container-lifestyle-2{
   margin-top: 2%;
   margin-left: 8%;
-  height:150px;
+  height: 300px;
   width: 85%;
-  border: 1px solid black;
-
+  border: 1px solid #FCC26E;
+  background-image: url('Lifestyle-Pic_2.jpg');
+  box-shadow: 7px 7px 20px #888888;
 }
 
 .description-container-lifestyle-1{
   margin-top: 2%;
   margin-left: 2.5%;
-  border: 1px solid black;
   height:120px;
   width: 95%;
 }
@@ -215,7 +262,6 @@ li {
 .description-container-lifestyle-2 {
   margin-top: 2%;
   margin-left: 2.5%;
-  border: 1px solid black;
   height:120px;
   width: 95%;
 }
@@ -223,7 +269,6 @@ li {
 .description-container-music-1{
   margin-top: 2%;
   margin-left: 2.5%;
-  border: 1px solid black;
   height:120px;
   width: 95%;
 }
@@ -231,7 +276,81 @@ li {
 .description-container-music-2{
   margin-top: 2%;
   margin-left: 2.5%;
-  border: 1px solid black;
   height:120px;
   width: 95%;
+}
+
+.footer-container {
+  border: 3px solid #FCC26E;
+  height: 50px;
+  width: 100%;
+  box-shadow: 7px 7px 20px #888888;
+}
+
+.tape-box-1{
+  width: 45%;
+  height: 30%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border: 2px solid black;
+  display: inline-block;
+  background-image: url('Music_Pic_2.jpg');
+  box-shadow: 7px 7px 10px #888888;
+}
+
+.tape-box-2{
+  width: 45%;
+  height: 30%;
+  margin-right: 2%;
+  margin-top: 2%;
+  border: 2px solid black;
+  float: right;
+  background-image: url('tape_2.jpg');
+  box-shadow: 7px 7px 10px #888888;
+}
+
+.tape-box-3{
+  width: 45%;
+  height: 30%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border: 2px solid black;
+  display: inline-block;
+  background-image: url('tape-3.jpg');
+  box-shadow: 7px 7px 10px #888888;
+
+
+}
+
+.tape-box-4{
+  width: 45%;
+  height: 30%;
+  margin-right: 2%;
+  margin-top: 2%;
+  border: 2px solid black;
+  float: right;
+  background-image: url('tape-4.jpg');
+  box-shadow: 7px 7px 10px #888888;
+}
+
+.tape-box-5{
+  width: 45%;
+  height: 30%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border: 2px solid black;
+  display: inline-block;
+  background-image: url('tape-5.jpg');
+  box-shadow: 7px 7px 10px #888888;
+}
+
+.tape-box-6{
+  width: 45%;
+  height: 30%;
+  margin-right: 2%;
+  margin-top: 2%;
+  border: 2px solid black;
+  float: right;
+  background-image: url('Music_Pic_1.jpg');
+  box-shadow: 7px 7px 10px #888888;
 }
