@@ -42,6 +42,7 @@ $(document).ready(function(){
       $('.title-header-music-1').append("<br>" + music_date_1)
       $('.title-header-music-1').append(music_author_1)
 
+
       $('.title-header-music-2').html(music_cat_title_2);
       $('.title-header-music-2').append("<br>" + music_date_2)
       $('.title-header-music-2').append(music_author_2)
