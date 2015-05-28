@@ -3,6 +3,10 @@ class ArticlesController < ApplicationController
   # before_filter :authorize
 
   def index
+    p "*" * 100
+    @user = User.find_by(id: session[:user_id])
+    p @user
+    p "*" * 100
     @articles = Article.all
   end
 
@@ -11,7 +15,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:category], description: params[:article][:description])
+    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description])
+      p "*" * 100
+    p @article
+      p "*" * 100
     redirect_to articles_path
   end
 
@@ -37,7 +44,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :date, :author, :type, :description)
+    params.require(:article).permit(:title, :date, :author, :type, :description, :category)
   end
 
 end

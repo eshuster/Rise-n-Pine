@@ -1,6 +1,24 @@
-<% @articles.each do |article|%>
-  <%=article.title %>
- <%= link_to "Edit", edit_article_path(article.id)%>
- <%= link_to "Delete", article_path(article.id), method: :destroy %><br>
-<%end%>
- <%= link_to "New Article", new_article_path %><br>
+<%if @user%>
+
+<div class='articles-main-container'>
+  <div class='article-listing'>
+    <ul><% @articles.each do |article|%>
+      <li class="title-listing"><%=article.title %></li><br>
+      <li class="date-listing"><%=article.date %></li><br>
+      <li class="author-listing"> <%=article.author %></li><br>
+      <li class="category-listing"><%=article.category %></li><br>
+      <li class="description-listing"><%=article.description %></li><br>
+      <%= link_to "Edit", edit_article_path(article.id)%>
+      <%= link_to "Delete", article_path(article.id), method: :destroy %><br><br>
+      <%end%>
+    </ul>
+      <%= link_to "New Article", new_article_path %><br>
+      <%= link_to "Home", '/' %>
+  </div>
+</div>
+
+<div class="error-container">
+  <%else%>
+    <p>Restricted</p>
+</div>
+  <%end%>

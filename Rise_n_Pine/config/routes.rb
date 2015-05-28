@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
 
-
-
   resources :articles do
     member do
       delete 'destroy'
