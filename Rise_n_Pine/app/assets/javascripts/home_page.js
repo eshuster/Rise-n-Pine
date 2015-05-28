@@ -39,21 +39,16 @@ $(document).ready(function(){
       var music_author_2 = author[3].innerHTML
 
       $('.title-header-music-1').html(music_cat_title_1);
-      $('.title-header-music-1').append("<br>" + music_date_1)
-      $('.title-header-music-1').append(music_author_1)
-
+      $('.title-header-music-1').append('<br>' + '<p class="title">' + music_date_1 + " by" + music_author_1 + '</p>')
 
       $('.title-header-music-2').html(music_cat_title_2);
-      $('.title-header-music-2').append("<br>" + music_date_2)
-      $('.title-header-music-2').append(music_author_2)
+      $('.title-header-music-2').append("<br>" + '<p class="title">' + music_date_2 + " by" + music_author_2 + '</p>')
 
       $('.title-header-lifestyle-1').html(lifestyle_title_1);
-      $('.title-header-lifestyle-1').append("<br>" + lifestyle_date_1)
-      $('.title-header-lifestyle-1').append(lifestyle_author_1)
+      $('.title-header-lifestyle-1').append("<br>" + '<p class="title">' + lifestyle_date_1 + " by" + lifestyle_author_1 + '</p>')
 
       $('.title-header-lifestyle-2').html(lifestyle_title_2);
-      $('.title-header-lifestyle-2').append("<br>" + lifestyle_date_1)
-      $('.title-header-lifestyle-2').append(lifestyle_author_1)
+      $('.title-header-lifestyle-2').append("<br>" + '<p class="title">' + lifestyle_date_1 + " by" + lifestyle_author_1 + '</p>')
 
       $('.date-header-music-1').html(music_cat_title_1);
       $('.date-header-music-2').html(music_cat_title_2);

@@ -1,0 +1,29 @@
+/*.car-image {
+  text-align: center;
+  margin-top: 4%;
+}*/
+
+/*.your-class {
+  height: 300px;
+  width: 100%;
+  border: 3px solid #00E1B1;
+  /*margin-left: 5%;*/
+/*}*/
+
+
+
+
+
+
+$slick-arrow-color: black;
+$slick-dot-color: white;
+
+.slick-prev:before  {
+  color: $slick-arrow-color;
+  }
+
+  .slick-next:before {
+  color: $slick-arrow-color;
+  }
+
+
