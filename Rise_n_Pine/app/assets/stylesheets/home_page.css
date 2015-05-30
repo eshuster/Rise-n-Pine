@@ -83,7 +83,7 @@ li {
 .music-news-container_1 {
   background-color: white;
   float: left;
-  width: 40%;
+  width: 30%;
   height: 600px;
   margin-top: 2.5%;
   margin-left: 5%;
@@ -95,7 +95,7 @@ li {
 .music-news-container_2 {
   background-color: white;
   float: left;
-  width: 40%;
+  width: 30%;
   height: 600px;
   margin-top: 2.5%;
   margin-left: 5%;
@@ -108,11 +108,11 @@ li {
 #lifestyle-news-container_1 {
   background-color: white;
   float: right;
-  width: 40%;
+  width: 30%;
   border: 2px solid #00E1B1;
   height: 600px;
   margin-top: 2.5%;
-  margin-right: 10%;
+  margin-right: 30%;
   opacity: .95;
   box-shadow: 7px 7px 20px #FCC26E;
 }
@@ -120,11 +120,11 @@ li {
 #lifestyle-news-container_2 {
   background-color: white;
   float: right;
-  width: 40%;
+  width: 30%;
   border: 2px solid #00E1B1;
   height: 600px;
   margin-top: 2.5%;
-  margin-right: 10%;
+  margin-right: 30%;
   opacity: .95;
   box-shadow: 7px 7px 20px #FCC26E;
 }

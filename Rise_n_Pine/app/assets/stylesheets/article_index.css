@@ -2,6 +2,37 @@
   text-align: center;
 }
 
+.articles-music-container {
+  border: 2px solid black;
+  width: 45%;
+  height: 100px;
+  display: inline-block;
+}
+
+.articles-news-container {
+  border: 2px solid black;
+  width: 45%;
+  height: 100px;
+  display: inline-block;
+}
+
+.articles-news-header {
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+}
+
+.articles-music-header {
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+}
+
+.options-container {
+  margin-top: 10%;
+  text-align: center;
+}
+
 .article-pic {
   width: 50%;
   height: 150px;

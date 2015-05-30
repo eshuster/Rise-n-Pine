@@ -1,25 +1,29 @@
-<%if @user%>
-
 <div class='articles-main-container'>
-  <div class='article-listing'>
-    <ul><% @articles.each do |article|%>
-      <li class="title-listing"><%=article.title %></li><br>
-      <li class="date-listing"><%=article.date %></li><br>
-      <li class="pic-listing"><%= image_tag article.image.to_s, :class=> "article-pic" %></li><br>
-      <li class="author-listing"> <%=article.author %></li><br>
-      <li class="category-listing"><%=article.category %></li><br>
-      <li class="description-listing"><%=article.description %></li><br>
-      <%= link_to "Edit", edit_article_path(article.id)%>
-      <%= link_to "Delete", article_path(article.id), method: :destroy %><br><br>
+  <%@articles.each do |article| %>
+    <% if article.category == "Music" %>
+      <div class='articles-music-container'>
+      <div class='articles-music-header'>Music</div>
+        <%=article.title%> &nbsp;
+        <%=article.date%> &nbsp;
+        <%= link_to 'Edit', edit_article_path(article)%> &nbsp;
+      </div>
+    <%else%>
+
+      <div class='articles-news-container'>
+      <div class='articles-news-header'>News</div>
+        <%=article.title%> &nbsp;
+        <%=article.date%> &nbsp;
+        <%= link_to 'Edit', edit_article_path(article)%> &nbsp;
+      </div>
       <%end%>
-    </ul>
-      <%= link_to "New Article", new_article_path %><br>
-      <%= link_to "Home", '/' %>
+    <%end%>
   </div>
+
+
+<div class="options-container">
+  <%= link_to "New Article", new_article_path %><br>
+  <%= link_to "Home", '/' %>
 </div>
 
-<div class="error-container">
-  <%else%>
-    <p>Restricted</p>
-</div>
-  <%end%>
+
+
