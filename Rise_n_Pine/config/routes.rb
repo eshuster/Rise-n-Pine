@@ -10,14 +10,25 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
 
+
+
   resources :articles do
+    # resources :tags do
     member do
       delete 'destroy'
       post 'destroy'
       put 'update'
       patch 'update'
-    end
+    # end
   end
+end
+
+  # resources :tags do
+  #   member do
+  #   end
+  # end
+
+
 
 
 end

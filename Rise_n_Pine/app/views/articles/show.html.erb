@@ -1,2 +1,56 @@
+<div class="mp3-player-container">
+</div>
 
-<%=@article.title %>
+<div class="om">
+  <div class="header-container">
+    <div class="logo-container">
+    </div>
+  </div>
+</div>
+
+<div class="main-container">
+  <nav class="drop-down-menus">
+    <ul class="links">
+      <li class="link-listing"><a href="http://risenpine.com/?cat=5">The Pine</a></li>
+      <li class="link-listing"><a href="http://risenpine.com/?cat=11">Hip Hop</a></li>
+      <li class="link-listing"><a href="http://risenpine.com/?cat=7">Videos</a></li>
+      <li class="link-listing"><a href="http://risenpine.com/?cat=4">Downloads</a></li>
+    </ul>
+  </nav>
+
+<div class="articles-show-main-container">
+
+  <div class="articles-show-header">
+    <%=@article.title%>
+
+  </div>
+
+  <div class="articles-show-info">
+    Posted by: <%=@article.author%> on <%=@article.date%>
+  </div>
+
+  <div class="articles-show-pic">
+    <%=@article.image%>
+    p
+  </div>
+
+  <div class="articles-show-description">
+    <%=@article.description%>
+  </div>
+
+  <div class="articles-show-player">
+    Player
+  </div>
+
+  <div class="articles-show-tags-container">
+    Tags
+  </div>
+
+  <div class="articles-show-related-posts-container">
+    Related
+  </div>
+
+
+
+</div>
+
