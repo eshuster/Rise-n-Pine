@@ -1,7 +1,10 @@
 
+
+<div class="main-container">
+
   <h1> New Article </h1>
 
-  <%= form_for @article, url: articles_path do |f| %>
+  <%= form_for @article, :html => {:multipart => true},  url: articles_path do |f| %>
 
     <p>
       <%= f.label :title %><br>
@@ -27,8 +30,15 @@
       <%= f.text_area :description %><br>
     </p>
 
+
+    <p>
+      <%= f.file_field :image %>
+    </p>
+
     <p class="article_submit">
       <%= f.submit %>
     </p>
 
   <%end%>
+
+</div>

@@ -5,6 +5,7 @@
     <ul><% @articles.each do |article|%>
       <li class="title-listing"><%=article.title %></li><br>
       <li class="date-listing"><%=article.date %></li><br>
+      <li class="pic-listing"><%= image_tag article.image.to_s, :class=> "article-pic" %></li><br>
       <li class="author-listing"> <%=article.author %></li><br>
       <li class="category-listing"><%=article.category %></li><br>
       <li class="description-listing"><%=article.description %></li><br>
