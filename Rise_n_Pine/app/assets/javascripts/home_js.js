@@ -46,15 +46,4 @@ $(document).ready(function(){
     $('.title-header-lifestyle-2').css("color", 'black')
   });
 
-
-  // $('.tape-box-1').mouseover(function(){
-
-  // })
-
-
-
-
-
-
-
 });

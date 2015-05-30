@@ -6,6 +6,7 @@ $(document).ready(function(){
     console.log(xhr.responseText)
 
     if (xhr.status === 200){
+      // debugger
       var parser = new DOMParser();
       var xmlDoc=parser.parseFromString(xhr.responseText,"text/xml");
       var title = xmlDoc.getElementsByClassName("title-listing");

@@ -6,6 +6,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :author
       t.string :category
       t.text :description
+      t.string :image
 
       t.timestamps null: false
     end

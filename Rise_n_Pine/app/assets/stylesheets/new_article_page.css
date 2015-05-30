@@ -1,0 +1,26 @@
+.main-container {
+  text-align: center;
+}
+
+
+#article_title {
+  width: 50%;
+  height: 50px;
+}
+
+#article_date {
+  width: 25%;
+}
+
+#article_author {
+  width: 25%;
+}
+
+#article_category {
+  width: 50%;
+}
+
+#article_description {
+  width: 50%;
+  height: 2 00px;
+}

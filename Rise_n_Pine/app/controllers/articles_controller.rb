@@ -15,10 +15,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description])
-      p "*" * 100
-    p @article
-      p "*" * 100
+    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description], image: params[:article][:image])
     redirect_to articles_path
   end
 
@@ -44,7 +41,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :date, :author, :type, :description, :category)
+    params.require(:article).permit(:title, :date, :author, :type, :description, :category, :image)
   end
 
 end
