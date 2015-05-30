@@ -20,10 +20,27 @@
   </div>
 
 
+
+
+
+
+
+
+
+
 <div class="options-container">
   <%= link_to "New Article", new_article_path %><br>
   <%= link_to "Home", '/' %>
+
 </div>
 
+
+
+<%= form_tag articles_path, :method => 'GET' do %>
+<p>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search", :title => nil %>
+</p>
+<%end%>
 
 

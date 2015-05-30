@@ -3,8 +3,7 @@ class ArticlesController < ApplicationController
   # before_filter :authorize
 
   def index
-    @user = User.find_by(id: session[:user_id])
-    @articles = Article.all
+    @articles = Article.search(params[:search])
   end
 
   def new
@@ -37,12 +36,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to articles_path
-  end
-
-  def search_artist
-    @article = Article.find(params[:artist])
-
-
   end
 
 
