@@ -5,7 +5,12 @@ class ArticlesController < ApplicationController
   def index
     @user = User.find_by(id: session[:user_id])
     @articles = Article.all
+    if params[:search]
+      @articles = Article.where("title like ?", "%#{params[:search]}%")
+    else
+      Article.all
   end
+end
 
   def new
     @article = Article.new
