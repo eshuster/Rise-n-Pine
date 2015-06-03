@@ -14,8 +14,8 @@ $(document).ready(function(){
       var count = 0
       while (count < data.length){
         var li = $('<li class="modal-artist-box"></li>');
-        var href = $('<a class="modal-options" href="http://localhost:3000/articles/' + data[count].id + '">Something</a>');
-        li.append(href);
+        var a_href = $('<a class="modal-options" href="http://localhost:3000/articles/' + data[count].id + '">Show</a>');
+        li.append(a_href);
         ul.append(li);
         count++;
       };

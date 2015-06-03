@@ -3,11 +3,17 @@ class ArticlesController < ApplicationController
   # before_filter :authorize
 
   def index
-
+    # render json: @articles
   end
 
   def articles_index
+    # if params[:search]
     @articles = Article.all
+    render json: @articles
+  end
+
+  def articles_search
+    @articles = Article.where(title: params[:title])
     render json: @articles
   end
 

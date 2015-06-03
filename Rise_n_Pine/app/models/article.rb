@@ -4,14 +4,12 @@ class Article < ActiveRecord::Base
   # has_many :tags
   mount_uploader :image, ImageUploader
 
-  # def self.search(search)
-  #   if search
-  #     # Article.find  ['title LIKE ?', "%#{search}%"]
-  #     @articles = Article.all
-  #     @articles.find_by title: "%#{search}%"
-  #   else
-  #     Article.all
-  #   end
-  # end
+  def self.search(search)
+    if search
+      where('title LIKE ?', "%#{search}%")
+    else
+      @articles=Article.all
+    end
+  end
 end
 
