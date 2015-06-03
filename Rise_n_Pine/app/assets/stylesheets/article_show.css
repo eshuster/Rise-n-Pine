@@ -42,7 +42,6 @@
 }
 
 
-
 .articles-show-tags-container{
   border: 2px solid #00E1B1;
   width: 65%;
@@ -55,4 +54,8 @@
   width: 65%;
   height: 50px;
   margin: auto;
+}
+
+.articles-artist-show {
+
 }

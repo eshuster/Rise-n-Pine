@@ -5,15 +5,17 @@
 .articles-music-container {
   border: 2px solid black;
   width: 45%;
-  height: 100px;
-  display: inline-block;
+  height: 149px;
+  /*display: inline-block;*/
+  float: left;
 }
 
 .articles-news-container {
   border: 2px solid black;
   width: 45%;
-  height: 100px;
-  display: inline-block;
+  height: 149px;
+  /*display: inline-block;*/
+  float: right;
 }
 
 .articles-news-header {
@@ -26,14 +28,53 @@
   border: 1px solid black;
   height: 50px;
   width: 100%;
+  text-align: center;
 }
 
 .options-container {
-  margin-top: 10%;
   text-align: center;
 }
 
 .article-pic {
   width: 50%;
   height: 150px;
+}
+
+.articles-search{
+  padding-top: 40%;
+  text-align: center;
+}
+
+/*.articles-news-body {
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+
+}
+
+.articles-music-body {
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+}
+
+*/
+
+.main-cont-left {
+  float: left;
+  width: 45%;
+  text-align: center;
+
+}
+
+.main-cont-right {
+  float: right;
+  width: 45%;
+  text-align: center;
+
+}
+
+.article-index-link {
+  float: right;
+  margin-right: 2%;
 }

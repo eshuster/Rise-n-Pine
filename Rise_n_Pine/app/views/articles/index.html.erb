@@ -1,23 +1,20 @@
-<div class='articles-main-container'>
-  <%@articles.each do |article| %>
-    <% if article.category == "Music" %>
-      <div class='articles-music-container'>
-      <div class='articles-music-header'>Music</div>
-        <%=article.title%> &nbsp;
-        <%=article.date%> &nbsp;
-        <%= link_to 'Edit', edit_article_path(article)%> &nbsp;
-      </div>
-    <%else%>
+<div class="main-cont-left">
+  <h1>Music</h1>
+</div>
 
-      <div class='articles-news-container'>
-      <div class='articles-news-header'>News</div>
-        <%=article.title%> &nbsp;
-        <%=article.date%> &nbsp;
-        <%= link_to 'Edit', edit_article_path(article)%> &nbsp;
-      </div>
-      <%end%>
-    <%end%>
-  </div>
+<div class="main-cont-right">
+  <h1>News</h1>
+</div>
+
+<div class="articles-search">
+  <%= form_tag articles_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :title => nil %>
+  </p>
+    <% end %>
+
+</div>
 
 
 <div class="options-container">

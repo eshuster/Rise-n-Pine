@@ -3,8 +3,12 @@ class ArticlesController < ApplicationController
   # before_filter :authorize
 
   def index
-    @user = User.find_by(id: session[:user_id])
+
+  end
+
+  def articles_index
     @articles = Article.all
+    render json: @articles
   end
 
   def new
@@ -13,7 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description], image: params[:article][:image])
+    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description], image: params[:article][:image], artist: params[:article][:artist])
     # @tag.create!(tag: params[:tag][:tag])
     redirect_to articles_path
   end
@@ -33,22 +37,25 @@ class ArticlesController < ApplicationController
     # @tag = Tag.where(user_id: @article.id).first
   end
 
+  def articles_show
+    @article = Article.find(params[:id])
+    render json: @article
+  end
+
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to articles_path
   end
 
-  def search_artist
-    @article = Article.find(params[:artist])
-
-
+  def searchartist
+    @articles = Article.where(artist: params[:artist])
+    render json: @articles
   end
-
 
   private
   def article_params
-    params.require(:article).permit(:title, :date, :author, :type, :description, :category, :image)
+    params.require(:article).permit(:title, :date, :author, :type, :description, :category, :image, :artist)
   end
 
 end

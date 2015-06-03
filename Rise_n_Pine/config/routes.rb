@@ -8,9 +8,12 @@ Rails.application.routes.draw do
 
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
+  # get '/search-artist' => 'articles#searchartist'
+  get '/articles_index' => 'articles#articles_index'
 
+  get '/searchartist/:artist' => 'articles#searchartist'
 
-
+  # get '/articles_show' => 'articles#articles_show'
 
   resources :articles do
     # resources :tags do
