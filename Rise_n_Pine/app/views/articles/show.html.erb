@@ -18,11 +18,10 @@
     </ul>
   </nav>
 
-<div class="articles-show-main-container">
+<div class="articles-show-main-container" id="<%=@article.id%>">
 
   <div class="articles-show-header">
     <%=@article.title%>
-
   </div>
 
   <div class="articles-show-info">
@@ -31,7 +30,6 @@
 
   <div class="articles-show-pic">
     <%=@article.image%>
-    p
   </div>
 
   <div class="articles-show-description">
@@ -46,7 +44,7 @@
     Tags
   </div>
 
-  <div class="articles-show-related-posts-container">
+  <div class="articles-show-related-posts-container" >
     Related
   </div>
 

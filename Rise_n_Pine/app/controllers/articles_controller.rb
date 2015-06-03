@@ -9,8 +9,13 @@ class ArticlesController < ApplicationController
       @articles = Article.where("title like ?", "%#{params[:search]}%")
     else
       Article.all
+    end
   end
-end
+
+  def articles_index
+    @articles = Article.all
+    render json: @articles
+  end
 
   def new
     @article = Article.new
@@ -18,7 +23,7 @@ end
   end
 
   def create
-    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description], image: params[:article][:image])
+    @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description], image: params[:article][:image], artist: params[:article][:artist])
     # @tag.create!(tag: params[:tag][:tag])
     redirect_to articles_path
   end
@@ -44,16 +49,14 @@ end
     redirect_to articles_path
   end
 
-  def search_artist
-    @article = Article.find(params[:artist])
-
-
+  def searchartist
+    @articles = Article.find(params[:artist])
+    render json: @articles
   end
-
 
   private
   def article_params
-    params.require(:article).permit(:title, :date, :author, :type, :description, :category, :image)
+    params.require(:article).permit(:title, :date, :author, :type, :description, :category, :image, :artist)
   end
 
 end
