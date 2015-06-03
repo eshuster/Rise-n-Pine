@@ -3,13 +3,7 @@ class ArticlesController < ApplicationController
   # before_filter :authorize
 
   def index
-    @user = User.find_by(id: session[:user_id])
-    @articles = Article.all
-    if params[:search]
-      @articles = Article.where("title like ?", "%#{params[:search]}%")
-    else
-      Article.all
-    end
+
   end
 
   def articles_index
@@ -43,6 +37,11 @@ class ArticlesController < ApplicationController
     # @tag = Tag.where(user_id: @article.id).first
   end
 
+  def articles_show
+    @article = Article.find(params[:id])
+    render json: @article
+  end
+
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
@@ -50,7 +49,7 @@ class ArticlesController < ApplicationController
   end
 
   def searchartist
-    @articles = Article.find(params[:artist])
+    @articles = Article.where(artist: params[:artist])
     render json: @articles
   end
 

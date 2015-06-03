@@ -11,10 +11,13 @@ Rails.application.routes.draw do
   # get '/search-artist' => 'articles#searchartist'
   get '/articles_index' => 'articles#articles_index'
 
+  get '/searchartist/:artist' => 'articles#searchartist'
+
+  # get '/articles_show' => 'articles#articles_show'
+
   resources :articles do
     # resources :tags do
     member do
-      get 'searchartist'
       delete 'destroy'
       post 'destroy'
       put 'update'
