@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
 
   def articles_search
     @articles = Article.where(title: params[:title])
-    render json: @articles
+    # render json: @articles
   end
 
   def new

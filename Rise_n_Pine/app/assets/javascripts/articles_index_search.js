@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('input[type="submit"]').on("click", function(event){
-    event.preventDefault();
+    // event.preventDefault();
     var search_title = $('input[type="text"]').val();
     console.log(search_title)
 

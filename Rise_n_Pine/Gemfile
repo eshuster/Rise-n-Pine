@@ -8,6 +8,7 @@ gem 'carrierwave'
 # gem 'rmagick', '~> 2.15.0'
 
 # gem 'bcrypt-ruby'
+gem 'twitter'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -30,6 +31,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'soundcloud'
+gem 'oauth'
+# gem 'authlogic'
+# set up oauth capabilities. Note: :lib is replaced with :require in rails 3
+gem 'authlogic-oauth', :require => 'authlogic_oauth'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
