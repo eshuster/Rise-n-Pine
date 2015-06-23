@@ -1,0 +1,14 @@
+
+<p>New Tweet</p>
+
+<%= form_for :tweet,  url: tweets_path do |f| %>
+
+  <%= f.label :status %><br>
+  <%= f.text_field :status %>
+
+  <%= f.submit %>
+
+<%end%>
+
+
+

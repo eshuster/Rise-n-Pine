@@ -18,39 +18,41 @@
     </ul>
   </nav>
 
+
+
+
 <div class="articles-show-main-container" id="<%=@article.id%>">
 
-  <div class="articles-show-header">
+  <div class="title-container">
     <%=@article.title%>
   </div>
 
-  <div class="articles-show-info">
+  <div class="info-container">
     Posted by: <%=@article.author%> on <%=@article.date%>
+    <%=@article.artist%>
   </div>
 
-  <div class="articles-show-pic">
+  <div class="image-container">
     <%=@article.image%>
   </div>
 
-  <div class="articles-show-description">
-    <h3 class="articles-artist-show"><%=@article.artist%></h3>
+  <div class="descr-container">
+    <%=@article.description%>
   </div>
 
-  <div class="articles-show-player">
+  <div class="player-container">
     Player
   </div>
 
-  <div class="articles-show-tags-container">
-    Tags
-  </div>
-
-  <div class="articles-show-related-posts-container" >
-    Related
-  </div>
-
-
 
 </div>
+
+
+<!--     Tags
+    Related -->
+
+<%= render :partial => 'tweets/new'%>
+
 
 <h1>Twitter Application</h1>
 <a href="/twitter_oauth_url" class="btn btn-primary btn-larg">Connect to Twitter</a>
