@@ -1,13 +1,25 @@
 $(document).ready(function(){
 
 
-$('body').on("mouseover", ".drop-down-menus", function(){
-    $('.drop-down-menus').css("background-color", "#00F7C3");
-    $('.link-listing').css("color", "white");
+$('body').on("mouseover", "nav", function(){
+    $('nav').css("background-color", "#00F7C3");
+    // $('.link-listing').css("color", "white");
   }).mouseout(function(){
-    $('.drop-down-menus').css("background-color", "white");
-    $('.link-listing').css("color", "#FCC26E");
+    $('nav').css("background-color", "white");
+    // $('.link-listing').css("color", "#FCC26E");
   });
+
+$('body').on("mouseover", "footer", function(){
+    $('footer').css("background-color", "#00F7C3");
+    // $('.link-listing').css("color", "white");
+  }).mouseout(function(){
+    $('footer').css("background-color", "white");
+    // $('.link-listing').css("color", "#FCC26E");
+  });
+
+
+
+
 
   $('body').on("mouseover", ".news-header", function(){
     $(this).css('background-color', '#00F7C3');
