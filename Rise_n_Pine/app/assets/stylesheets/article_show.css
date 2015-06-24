@@ -4,58 +4,22 @@
   margin: auto;
 }
 
-.articles-show-header{
-  border: 2px solid #00E1B1;
-  width: 25%;
-  height: 75px;
-  margin: auto;
-}
-
-.articles-show-info{
-  border: 2px solid #00E1B1;
-  width: 10%;
-  height: 25px;
-  margin: auto;
-  font-size: 9px;
-}
-
-.articles-show-pic{
-  border: 2px solid #00E1B1;
-  width: 25%;
-  height: 250px;
-  margin: auto;
-}
-
-.articles-show-description {
-  border: 2px solid #00E1B1;
-  width: 25%;
-  height: 200px;
-  margin: auto;
+.title-container{
 
 }
 
-.articles-show-player{
-  border: 2px solid #00E1B1;
-  width: 25%;
-  height: 300px;
-  margin: auto;
+.info-container{
+
 }
 
+.image-container{
 
-.articles-show-tags-container{
-  border: 2px solid #00E1B1;
-  width: 65%;
-  height: 50px;
-  margin: auto;
 }
 
-.articles-show-related-posts-container{
-  border: 2px solid #00E1B1;
-  width: 65%;
-  height: 50px;
-  margin: auto;
+.descr-container{
+
 }
 
-.articles-artist-show {
+.player-container {
 
 }

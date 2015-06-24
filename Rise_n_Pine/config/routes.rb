@@ -18,10 +18,19 @@ Rails.application.routes.draw do
   # resources :articles, path_names: { articles_search: 'index_search'}
 
 resources :twitter
-  get '/twitter_profile' => "twitter#twitter_profile"
-  get '/oauth_account' => "twitter#oauth_account"
+
+  # post '/new/:status' => "twitter#new"
+  # get '/oauth_account' => "twitter#oauth_account"
   # post '/oauth_account' => "twitter#oauth_account"
-  get '/twitter_oauth_url' => 'twitter#generate_twitter_oauth_url'
+  # get '/twitter_oauth_url' => 'twitter#generate_twitter_oauth_url'
+
+
+
+resources :tweets do
+  member do
+
+  end
+end
 
 
   resources :articles do

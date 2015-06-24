@@ -19,12 +19,10 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-    # @tag = Tag.new
   end
 
   def create
     @article = Article.create!(title: params[:article][:title], date: params[:article][:date], author: params[:article][:author], category: params[:article][:category], description: params[:article][:description], image: params[:article][:image], artist: params[:article][:artist])
-    # @tag.create!(tag: params[:tag][:tag])
     redirect_to articles_path
   end
 
@@ -40,7 +38,6 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
-    # @tag = Tag.where(user_id: @article.id).first
   end
 
   def articles_show
