@@ -12,3 +12,8 @@ $slick-dot-color: white;
 
 
 ]
+
+
+.slick-dots {
+  padding-top: 50%;
+}
